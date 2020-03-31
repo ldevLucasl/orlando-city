@@ -14,14 +14,28 @@
 	</head>
 	<body>
 
-		<header>			
-			<div class="container container-logo">
+		<header>	
+			<div id="menu-mobile-mask" class="visible-xs"></div>
+			<div id="menu-mobile" class="visible-xs">
+				<ul class="list-unstyled" id="visible-open-menu">
+					<li><a href="videos.html">Videos</a></li>
+					<li><a href="#">Tickets</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Schedule</a></li>
+				</ul>	
+				<div class="bar-close">
+					<button type="button" class="btn btn-close"><i class="far fa-times-circle"></i></button>
+				</div>
+			</div>		
+			<div class="container">
 				<img id="logotipo" src="img/orlando-logo.png" alt="Logotipo">
 			</div>
 
 			<div class="header-black">
 				
 				<div class="container">
+
+					<input type="search" id="input-search-mobile" class="visible-xs" placeholder="search...">
 				
 					<button id="btn-bars" type="button"><i class="fas fa-bars" aria-hidden="true"></i></button>
 					<button id="btn-search" type="button"><i class="fas fa-search" aria-hidden="true"></i></button>
