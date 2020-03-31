@@ -131,6 +131,12 @@ header .header-black li a {
 header #logotipo {
 	position: absolute;
 	top: 20px;
+	z-index: 3;
+}
+
+#banner h1.efeito {
+	color: red;
+	font-size: 12em;
 }
 
 #menu {
@@ -144,6 +150,11 @@ header #logotipo {
 
 #menu li.search {
 	width: 182px;
+	transition: 1s;
+}
+
+#menu li.search.ativo {
+	width: 300px;
 }
 
 #menu li.search input {
@@ -153,9 +164,15 @@ header #logotipo {
 	height: 30px;
 	line-height: 30px;
 }
+
+#menu li.search.ativo input {
+	width: 300px;
+}
+
 #menu li.search ::-webkit-input-placeholder {
 	color: #fff;	
 }
+
 #menu li a {
 	color: #FFF;
 	font-size: 16px;
@@ -192,9 +209,11 @@ header #logotipo {
 	position: relative;
 	background-image: url("../img/banner.jpg");
 	top: -110px;
+	background-size: cover;
 }
 
 #banner h1 {
+	transition: 1s;
 	top: 250px;
 	font-size: 92px;
 	color: white;
@@ -232,6 +251,7 @@ header #logotipo {
 
 #news .thumbnails {
 	margin-top: 20px;
+	margin-left: 0;
 }
 
 #news .thumbnails h3 {
@@ -246,6 +266,14 @@ header #logotipo {
 	color: #a7a7a7;
 	font-size: 18px;
 	font-family: 'OpenSans';
+}
+
+#news .thumbnails .item-inner {
+	padding: 10px;
+}
+
+#news .thumbnails .item-inner img {
+	width: 100%;
 }
 
 #estatisticas {
@@ -413,4 +441,12 @@ footer .col-get-in-touch i {
 
 footer .col-get-in-touch p {
 	line-height: 20px;
+}
+
+video {
+	width: 60%;
+}
+
+#btn-bars, #btn-search {
+	display: none;
 }
